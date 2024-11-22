@@ -10,6 +10,7 @@ type Props = {
   navigation: LoginScreenNavigationProp;
 };
 
+
 const LoginScreen: React.FC<Props> = ({ navigation }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

@@ -1,6 +1,15 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "jsx": "react",
+    "declaration": true,
+    "target": "es2017",            // Conservez "es2017" ou un target supérieur (comme "es2020", "es2021")
+    "module": "es2022",            // Mettez "module" sur "es2022" ou un autre module compatible avec top-level await
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
+    "allowJs": true,
+    "esModuleInterop": true,
     "strict": true,
     "paths": {
       "@/*": [

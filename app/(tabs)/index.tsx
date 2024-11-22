@@ -1,10 +1,16 @@
 import { Image, StyleSheet, Platform } from 'react-native';
+import MyComponent from '@/components/MyComponent';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { App } from '@/components/Acceuil';
+import React from 'react';
+import * as SQLite from 'expo-sqlite';
+
+
+
 
 export default function HomeScreen() {
   return (
@@ -17,7 +23,7 @@ export default function HomeScreen() {
         />
       }>
       <App/>
-      
+      <MyComponent />
     </ParallaxScrollView>
   );
 }
